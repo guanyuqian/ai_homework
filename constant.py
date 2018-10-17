@@ -1,6 +1,3 @@
-import os
-
-
 class Const:
     class ConstError(TypeError):
         pass
@@ -23,121 +20,31 @@ sys.modules[__name__] = Const()
 import constant
 
 # 裁剪图片偏移量
-constant.WIDTH_PX = 570
-constant.HEIGHT_PX = 1200
+# 宽度控制
+
+constant.DEVICE_X_THREE = 575
+constant.WIDTH_PX = 350
+constant.GAP = (constant.DEVICE_X_THREE-constant.WIDTH_PX)/2
+constant.DEVICE_X_THREE-(2*constant.GAP)
+constant.DEVICE_X_THREE-(2*constant.GAP)
+constant.HEIGHT_PX = 950
 constant.DX0 = 380
-constant.DX1 = constant.DX0 + constant.WIDTH_PX
-constant.DX2 = constant.DX1 + constant.WIDTH_PX
-constant.DX3 = constant.DX2 + constant.WIDTH_PX
-constant.DY0 = 548
+constant.DX1 = constant.DX0 + constant.DEVICE_X_THREE
+constant.DX2 = constant.DX1 + constant.DEVICE_X_THREE
+constant.DX3 = constant.DX2 + constant.DEVICE_X_THREE
+constant.DY0 = 650
 constant.DY1 = constant.DY0 + constant.HEIGHT_PX
 
 # 路径
-constant.ORIGINAL_SUCC_IMAGE_PATH = './original_images/success_images/'
+constant.ORIGINAL_SUCCESS_IMAGE_PATH = './original_images/success_images/'
 constant.ORIGINAL_FAIL_IMAGE_PATH = './original_images/failure_images/'
-constant.SEGMENT_IMAGE_PATH = './segment_images/'
+constant.ORIGINAL_PREDICT_IMAGE_PATH = './original_images/check_images/'
 constant.SYNTHESIS_IMAGE_PATH = './synthesis_images/'
-constant.CHECK_IMAGE_PATH = './original_images/check_images/'
-constant.TRAIN_SET = './cvs/train_set.csv'
+constant.TRAIN_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
+constant.PREDICT_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
 
 # 测试集
-constant.MODEL_PATH = 'binary_model.h5'
-constant.CNN_PATH = 'cnn_model.h5'
-constant.PREDICT_LABEL = [
-    0, 0, 0,
-    0, 0, 0,
-    0, 0, 0,
-    1, 1, 0,
-    1, 0, 0,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1
-]
+constant.BEST_MODEL_PATH = 'net_best.pkl'
+constant.LAST_MODEL_PATH = 'net_last.pkl'
 
 
-constant.PREDICT_SUCC_LABEL = [
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1,
-    1, 1, 1
-]
-# CSV相关
-constant.CSV_IMAGE_RESULT = 'img_result'
-constant.CSV_IMAGE_NAME = 'img_name'
-constant.CSV_SEP = ','
-
-constant.FAILURE_IMG_LABEL = [
-    [0, 0, 0], [1, 1, 0],
-    [1, 1, 0], [0, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [1, 0, 0], [1, 0, 0],
-    [1, 1, 0], [0, 0, 0],
-    [1, 0, 0], [0, 0, 0],
-    [1, 0, 0], [0, 0, 0],
-    [0, 0, 0], [1, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [1, 0, 0], [1, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [1, 0, 0], [1, 0, 0],
-    [1, 0, 0], [1, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [1, 0, 0], [1, 1, 0],
-    [1, 0, 0], [1, 1, 0],
-    [1, 0, 0], [0, 0, 0],
-    [1, 0, 0], [0, 0, 0],
-    [1, 1, 0], [0, 0, 0],
-    [1, 0, 0], [1, 1, 0],
-    [0, 0, 0], [1, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [1, 0, 0], [0, 0, 0],
-    [0, 0, 0], [0, 0, 0],
-    [0, 0, 0], [1, 0, 0]
-]
