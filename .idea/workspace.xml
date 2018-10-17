@@ -15,6 +15,9 @@
     <SUITE FILE_PATH="coverage/gyq_homework$image_preprocessing.coverage" NAME="image_preprocessing Coverage Results" MODIFIED="1539530205981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gyq_homework$constant.coverage" NAME="constant Coverage Results" MODIFIED="1539511900066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="Cvs2Configuration">
+    <option name="OVERRIDE_EXISTING_TAG_FOR_PROJECT" value="false" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="141851747">
       <usages-collector id="statistics.lifecycle.project">
@@ -77,38 +80,70 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="997829553">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="pkl" value="1" />
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="45" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="45" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/binary_model.py">
+        <entry file="file://$PROJECT_DIR$/constant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1761">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="-202">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gpu_train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2375">
+              <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
               <folding>
-                <element signature="e#8#31#0" expanded="true" />
-                <marker date="1539531937152" expanded="true" signature="4219:4220" ph="..." />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/constant.py">
+        <entry file="file://$PROJECT_DIR$/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check_with_binary_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+            <state relative-caret-position="360">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding>
-                <element signature="e#14#42#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,13 +152,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
+            <state relative-caret-position="65">
               <caret line="163" selection-start-line="163" selection-end-line="163" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1539534613377" expanded="true" signature="88:90" ph="..." />
-                <marker date="1539534613377" expanded="true" signature="172:4788" ph="..." />
-                <marker date="1539534613377" expanded="true" signature="755:4408" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,6 +197,7 @@
         <option value="$PROJECT_DIR$/binary_model.py" />
         <option value="$PROJECT_DIR$/check_with_binary_model.py" />
         <option value="$PROJECT_DIR$/constant.py" />
+        <option value="$PROJECT_DIR$/gpu_train.py" />
       </list>
     </option>
   </component>
@@ -190,17 +223,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="gyq_homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gyq_homework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gyq_homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gyq_homework" type="462c0819:PsiDirectoryNode" />
-              <item name="original_images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gyq_homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ai_homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ai_homework" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,13 +240,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\the_s\PycharmProjects\gyq_homework" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="N:\gyq_homework\original_images" />
       <recent name="C:\Users\the_s\PycharmProjects\gyq_homework" />
       <recent name="C:\Users\the_s\PycharmProjects\gyq_homework\原始图片" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\the_s\PycharmProjects\gyq_homework" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -237,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.check_with_binary_model">
+  <component name="RunManager" selected="Python.predict">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="gyq_homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,20 +325,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="constant" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gpu_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gyq_homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/constant.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gpu_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,22 +344,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="image_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gyq_homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_preprocessing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -367,19 +385,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tokenize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="gyq_homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tokenize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.python3.6" />
-      <item itemvalue="Python.image_preprocessing" />
       <item itemvalue="Python.binary_model" />
-      <item itemvalue="Python.constant" />
       <item itemvalue="Python.check_with_binary_model" />
+      <item itemvalue="Python.tokenize" />
+      <item itemvalue="Python.predict" />
+      <item itemvalue="Python.gpu_train" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict" />
+        <item itemvalue="Python.gpu_train" />
+        <item itemvalue="Python.tokenize" />
         <item itemvalue="Python.check_with_binary_model" />
         <item itemvalue="Python.binary_model" />
-        <item itemvalue="Python.image_preprocessing" />
-        <item itemvalue="Python.constant" />
       </list>
     </recent_temporary>
   </component>
@@ -394,15 +433,22 @@
       <option name="presentableId" value="Default" />
       <updated>1539497999114</updated>
     </task>
+    <task id="LOCAL-00001" summary="重构代码">
+      <created>1539791646312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539791646312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13646056" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1380597" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42886811" />
@@ -411,11 +457,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32917964" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.9283489" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.36967808" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,6 +499,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="重构代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -575,44 +625,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binary_model.py">
+    <entry file="file://$PROJECT_DIR$/binary_model.py" />
+    <entry file="file://$PROJECT_DIR$/check_with_binary_model.py" />
+    <entry file="file://$PROJECT_DIR$/net_last.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tokenize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1761">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#8#31#0" expanded="true" />
-            <marker date="1539531937152" expanded="true" signature="4219:4220" ph="..." />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="789" column="13" lean-forward="true" selection-start-line="789" selection-start-column="13" selection-end-line="789" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
+        <state relative-caret-position="65">
           <caret line="163" selection-start-line="163" selection-end-line="163" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1539534613377" expanded="true" signature="88:90" ph="..." />
-            <marker date="1539534613377" expanded="true" signature="172:4788" ph="..." />
-            <marker date="1539534613377" expanded="true" signature="755:4408" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check_with_binary_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/constant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state relative-caret-position="-202">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gpu_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

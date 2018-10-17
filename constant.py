@@ -44,7 +44,7 @@ constant.TRAIN_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant
 constant.PREDICT_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
 
 # 测试集
-constant.BEST_MODEL_PATH = 'net_best.pkl'
+constant.BEST_MODEL_PATH = 'net_no_validation_acc1.0'
 constant.LAST_MODEL_PATH = 'net_last.pkl'
 
 

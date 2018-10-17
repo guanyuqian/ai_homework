@@ -63,6 +63,7 @@ if __name__ == '__main__':
     loss_func = nn.CrossEntropyLoss()
     # training loop
     for epoch in range(EPOCH):
+
         for step, x in enumerate(train_x):
             x.unsqueeze_(0)
             x.unsqueeze_(0)
@@ -77,11 +78,12 @@ if __name__ == '__main__':
             loss = loss_func(output, batch_y)
             # 清空上一次梯度
             optimizer.zero_grad()
-             # 误差反向传递
+            # 误差反向传递
             loss.backward()
             # 优化器参数更新
             optimizer.step()
-            # if step % 50 == 0:
+            # validation输出，最终结果不用写
+            if step % 50 == 0:
             #     amount = 0
             #     true = 0
             #     y1 = []
@@ -98,4 +100,5 @@ if __name__ == '__main__':
             #         amount += 1
             #     accuracy = true/amount
             #     print('Epoch: ', epoch, '| train loss: %.8f' % loss.data.cpu().numpy(), '| test accuracy: %.2f' % accuracy)
+                print('Epoch: ', epoch, '| train loss: %.8f' % loss.data.cpu().numpy())
     torch.save(cnn.state_dict(),constant.LAST_MODEL_PATH)
