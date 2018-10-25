@@ -1,4 +1,4 @@
-class Const:
+﻿class Const:
     class ConstError(TypeError):
         pass
 
@@ -40,8 +40,8 @@ constant.ORIGINAL_SUCCESS_IMAGE_PATH = './original_images/success_images/'
 constant.ORIGINAL_FAIL_IMAGE_PATH = './original_images/failure_images/'
 constant.ORIGINAL_PREDICT_IMAGE_PATH = './original_images/check_images/'
 constant.SYNTHESIS_IMAGE_PATH = './synthesis_images/'
-constant.TRAIN_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
-constant.PREDICT_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH,constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
+constant.TRAIN_IMAGES_PATH_LIST = [constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
+constant.PREDICT_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH]
 
 # 测试集
 constant.BEST_MODEL_PATH = 'net_no_validation_acc1.0'
