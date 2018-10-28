@@ -2,7 +2,7 @@ import constant
 import os, uuid
 from PIL import Image
 from skimage.transform import resize
-from skimage import io, color
+from skimage import color
 import numpy as np
 import torch
 
@@ -43,13 +43,8 @@ def cut_img(original_image_path, image_list, images_label, images_name, need_syn
     images_label.append(int(original_image_path.split("/")[-1][2]))
     # 打开原始图片.jpg
     im = Image.open(original_image_path)
-    # 左侧图片切割
-    left_area = (constant.DX0 + constant.GAP, constant.DY0, constant.DX1 - constant.GAP, constant.DY1)
-    # 中间图片切割
-    middle_area = (constant.DX1 + constant.GAP, constant.DY0, constant.DX2 - constant.GAP, constant.DY1)
-    # 右侧图片切割
-    right_area = (constant.DX2 + constant.GAP, constant.DY0, constant.DX3 - constant.GAP, constant.DY1)
-    image_device = [im.crop(left_area), im.crop(middle_area), im.crop(right_area)]
+
+    image_device = [im.crop(constant.LEFT_AREA), im.crop(constant.MIDDLE_AREA), im.crop(constant.MIDDLE_AREA)]
 
     # 添加文件名字
     images_name.append(os.path.basename(original_image_path) + " left")

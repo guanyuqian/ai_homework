@@ -19,9 +19,7 @@ sys.modules[__name__] = Const()
 
 import constant
 
-# 裁剪图片偏移量
 # 宽度控制
-
 constant.DEVICE_X_THREE = 575
 constant.WIDTH_PX = 350
 constant.GAP = (constant.DEVICE_X_THREE-constant.WIDTH_PX)/2
@@ -34,12 +32,23 @@ constant.DX2 = constant.DX1 + constant.DEVICE_X_THREE
 constant.DX3 = constant.DX2 + constant.DEVICE_X_THREE
 constant.DY0 = 650
 constant.DY1 = constant.DY0 + constant.HEIGHT_PX
+# 裁剪图片偏移量
+
+# 左侧图片切割
+constant.LEFT_AREA = (constant.DX0 + constant.GAP, constant.DY0, constant.DX1 - constant.GAP, constant.DY1)
+# 中间图片切割
+constant.MIDDLE_AREA = (constant.DX1 + constant.GAP, constant.DY0, constant.DX2 - constant.GAP, constant.DY1)
+# 右侧图片切割
+constant.RIGHT_AREA = (constant.DX2 + constant.GAP, constant.DY0, constant.DX3 - constant.GAP, constant.DY1)
+
 
 # 路径
 constant.ORIGINAL_SUCCESS_IMAGE_PATH = './original_images/success_images/'
 constant.ORIGINAL_FAIL_IMAGE_PATH = './original_images/failure_images/'
 constant.ORIGINAL_PREDICT_IMAGE_PATH = './original_images/check_images/'
 constant.SYNTHESIS_IMAGE_PATH = './synthesis_images/'
+constant.RESULT_IMAGE_PATH = './result_images/'
+
 constant.TRAIN_IMAGES_PATH_LIST = [constant.ORIGINAL_SUCCESS_IMAGE_PATH, constant.ORIGINAL_FAIL_IMAGE_PATH]
 constant.PREDICT_IMAGES_PATH_LIST = [constant.ORIGINAL_PREDICT_IMAGE_PATH]
 
