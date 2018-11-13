@@ -2,7 +2,7 @@ import constant
 import os, uuid
 from PIL import Image
 from skimage.transform import resize
-from skimage import color
+from skimage import io, color
 import numpy as np
 import torch
 
@@ -26,6 +26,7 @@ def get_images(rootdir):
     x = []
     for i in range(0, len(list_file)):
         path = os.path.join(rootdir, list_file[i])
+        path=path.replace('\\', '/')
         if os.path.isfile(path) and path[-4:] == '.jpg':
             x.append(path)
     return x
@@ -43,13 +44,18 @@ def cut_img(original_image_path, image_list, images_label, images_name, need_syn
     images_label.append(int(original_image_path.split("/")[-1][2]))
     # 打开原始图片.jpg
     im = Image.open(original_image_path)
-
-    image_device = [im.crop(constant.LEFT_AREA), im.crop(constant.MIDDLE_AREA), im.crop(constant.MIDDLE_AREA)]
+    # 左侧图片切割
+    left_area = (constant.DX0 + constant.GAP, constant.DY0, constant.DX1 - constant.GAP, constant.DY1)
+    # 中间图片切割
+    middle_area = (constant.DX1 + constant.GAP, constant.DY0, constant.DX2 - constant.GAP, constant.DY1)
+    # 右侧图片切割
+    right_area = (constant.DX2 + constant.GAP, constant.DY0, constant.DX3 - constant.GAP, constant.DY1)
+    image_device = [im.crop(left_area), im.crop(middle_area), im.crop(right_area)]
 
     # 添加文件名字
-    images_name.append(os.path.basename(original_image_path) + " left")
-    images_name.append(os.path.basename(original_image_path) + " middle")
-    images_name.append(os.path.basename(original_image_path) + " right")
+    images_name.append(os.path.basename(original_image_path) +constant.LEFT)
+    images_name.append(os.path.basename(original_image_path) +constant.MIDDLE)
+    images_name.append(os.path.basename(original_image_path) + constant.RIGHT)
 
     # if (need_synthesis_images):
     #     synthesis_images(image_device, images_label, images_name, original_image_path)
