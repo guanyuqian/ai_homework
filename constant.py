@@ -24,9 +24,9 @@ import constant
 
 constant.DEVICE_X_THREE = 575
 constant.WIDTH_PX = 350
-constant.GAP = (constant.DEVICE_X_THREE-constant.WIDTH_PX)/2
-constant.DEVICE_X_THREE-(2*constant.GAP)
-constant.DEVICE_X_THREE-(2*constant.GAP)
+constant.GAP = (constant.DEVICE_X_THREE - constant.WIDTH_PX) / 2
+constant.DEVICE_X_THREE - (2 * constant.GAP)
+constant.DEVICE_X_THREE - (2 * constant.GAP)
 constant.HEIGHT_PX = 950
 constant.DX0 = 380
 constant.DX1 = constant.DX0 + constant.DEVICE_X_THREE
@@ -54,8 +54,10 @@ constant.BEST_MODEL_PATH = 'net_no_validation_acc1.0'
 constant.LAST_MODEL_PATH = 'net_last.pkl'
 
 # 字符串
-constant.MIDDLE=' mid'
-constant.LEFT=' lef'
-constant.RIGHT=' rig'
+constant.MIDDLE = ' mid'
+constant.LEFT = ' lef'
+constant.RIGHT = ' rig'
 
 
+# 用不用GPU
+constant.USE_GPU = 0

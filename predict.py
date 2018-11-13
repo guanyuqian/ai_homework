@@ -8,7 +8,7 @@ import torch
 from PIL import ImageDraw
 import constant
 import datetime
-from gpu_train import CNN
+from train import CNN
 from image_preprocessing import predict_data_preprocessing
 import warnings
 
@@ -59,7 +59,8 @@ if __name__ == '__main__':
         print('程序开始时间', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         print('载入模型')
         cnn = CNN()
-        cnn = cnn.cuda()
+        if constant.USE_GPU:
+            cnn = cnn.cuda()
         cnn.load_state_dict(torch.load(constant.LAST_MODEL_PATH))
         test_x, test_y, images_name = predict_data_preprocessing([path.get()])
         left=0
@@ -71,7 +72,8 @@ if __name__ == '__main__':
         for i, x in enumerate(test_x):
             x.unsqueeze_(0)
             x.unsqueeze_(0)
-            x = x.cuda()
+            if constant.USE_GPU:
+                x = x.cuda()
             test_output = cnn(x)[0]
             pre_y = torch.max(test_output, 1)[1].data.cpu().squeeze().numpy()
             if pre_y == 0:

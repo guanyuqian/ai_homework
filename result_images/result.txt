@@ -1,4 +1,4 @@
-开始检测时间2018-11-13 21:46:03
+开始检测时间2018-11-13 22:41:37
 Failed:000 (1).jpg lef
 Failed:000 (1).jpg mid
 Failed:000 (1).jpg rig
@@ -119,4 +119,4 @@ Failed:110 (5).jpg rig
 Failed:110 (6).jpg rig
 Failed:110 (7).jpg rig
 Failed:110.jpg rig
-结束时间2018-11-13 21:46:09
+结束时间2018-11-13 22:45:10

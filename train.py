@@ -5,14 +5,15 @@ import pandas as pd
 import numpy as np
 from skimage import io,color
 from skimage.transform import resize
-
+import warnings
 import constant
 from image_preprocessing import data_preprocessing, predict_data_preprocessing
 
 EPOCH = 30# train the training data n times, to save time, we just train 1 epoch
 BATCH_SIZE = 50
 LR = 0.0001              # learning rate
-if_use_gpu = 1
+
+
 
 class CNN(nn.Module):
     def __init__(self):
@@ -46,8 +47,9 @@ class CNN(nn.Module):
 
 
 if __name__ == '__main__':
+    warnings.filterwarnings('ignore')
     cnn = CNN()
-    if if_use_gpu:
+    if constant.USE_GPU:
         cnn = cnn.cuda()
     print(cnn)
     loss_func = nn.CrossEntropyLoss()
@@ -69,7 +71,7 @@ if __name__ == '__main__':
             x.unsqueeze_(0)
             batch_x = Variable(x)
             batch_y = Variable(train_y[step])
-            if if_use_gpu:
+            if constant.USE_GPU:
                 batch_x = batch_x.cuda()
                 batch_y = batch_y.cuda()
             # 输入训练数据
