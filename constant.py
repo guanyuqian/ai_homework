@@ -58,6 +58,7 @@ constant.MIDDLE = ' mid'
 constant.LEFT = ' lef'
 constant.RIGHT = ' rig'
 
+constant.DEBUG = 0
 
 # 用不用GPU
 constant.USE_GPU = 0
